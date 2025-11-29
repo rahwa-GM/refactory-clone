@@ -39,7 +39,7 @@ refactory_clone/
 
 1. Clone the repository:
 
-git clone https://github.com/rahwa-GM/refactory_clone.git
+git clone https://github.com/rahwa-GM/refactory-clone.git
 
 
 2. Open the website:
@@ -65,4 +65,4 @@ This project is for learning and practice only.
 Rahwa Gebremichael
 GitHub: https://github.com/rahwa-GM
 
-Project Repository: https://github.com/rahwa-GM/refactory_clone.git
+Project Repository: https://github.com/rahwa-GM/refactory-clone.git
