@@ -6,13 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home page</title>
 
-  <!-- Google Poppins font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 
@@ -21,6 +14,7 @@
 </head>
 
 <body>
+  <!-- header/navbar section -->
   <header>
     <div class="header-container">
       <div class="img-container">
@@ -28,7 +22,7 @@
       </div>
 
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" id="navLinks">
           <li class="link-items">
             <a href="#">About Us</a>
             <ul class="dropdown">
@@ -60,10 +54,16 @@
           <li class="link-items"><a href="#">FAQs</a></li>
           <li class="link-items"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
         </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
     </div>
   </header>
 
+  <!-- hero-section -->
   <section class="hero-carousel">
     <div class="slide active" style="background-image: url('./images/1.jpg');"></div>
     <div class="slide" style="background-image: url('./images/2.jpg');"></div>
@@ -71,16 +71,17 @@
 
     <!-- Hero content -->
     <div class="hero-content">
-      <h1>Learn. Grow. Transform.</h1>
-      <p>Empowering tech talent in Africa</p>
+      <h1>Transforming Africa’s Tech Talent for the Future.</h1>
+      <p>Tech programs by and for the Tech Industry</p>
       <div class="hero-buttons">
-        <button class="btn-purple">Partner with us <i class="fa-solid fa-arrow-right"></i></button>
-        <button class="btn-yellow">Explore Programs <i class="fa-solid fa-arrow-right"></i></button>
-        <button class="btn-white">Hire Talent <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn-partner">Partner with us <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn-explore">Explore Programs <i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn-talent">Hire Talent <i class="fa-solid fa-arrow-right"></i></button>
       </div>
     </div>
   </section>
 
+  <!-- aboutus-section -->
   <section class="about-section">
     <div class="about-container">
       <!-- Left text content -->
@@ -96,7 +97,7 @@
           Refactory Academy is revolutionizing the tech industry in Uganda by blending essential in-demand tech skills
           with soft skills needed by the tech industry.
         </p>
-        <button class="btn-yellow">Learn More<i class="fa-solid fa-arrow-right"></i></button>
+        <button class="btn-learn">Learn More<i class="fa-solid fa-arrow-right"></i></button>
       </div>
 
       <!-- Right image content -->
@@ -106,7 +107,7 @@
     </div>
   </section>
 
-
+  <!-- featured-course section -->
   <section class="featured-courses">
     <div class="section-header">
       <h4>Start your dream career!</h4>
@@ -116,65 +117,43 @@
     <div class="courses-container">
       <!-- Course Card 1 -->
       <div class="course-card">
-        <img src="./images/card1.jpg" alt="Course 1">
+        <img src="./images/featured_img1.jpg" alt="Course 1">
         <h3>Foundational Courses</h3>
         <p>These courses build the essential knowledge and skills needed to thrive in more advanced or specialized tech
           fields.</p>
-        <button class="btn-gold">Learn More</button>
+        <button class="btn-course">Learn More</button>
       </div>
 
       <!-- Course Card 2 -->
       <div class="course-card">
-        <img src="./images/img2.jpg" alt="Course 2">
+        <img src="./images/featured_img2.jpg" alt="Course 2">
         <h3>Apprenticeship Course</h3>
         <p>Designed to provide aspiring software developers with technical training and industry-led mentorship.</p>
-        <button class="btn-gold">Learn More</button>
+        <button class="btn-course">Learn More</button>
       </div>
 
       <!-- Course Card 3 -->
       <div class="course-card">
-        <img src="./images/img3.jpeg" alt="Course 3">
+        <img src="./images/featured_img3.jpeg" alt="Course 3">
         <h3>Advanced Courses</h3>
         <p>Go beyond the basics to develop mastery in high-demand fields, prepare for innovation-driven careers.</p>
-        <button class="btn-gold">Learn More</button>
+        <button class="btn-course">Learn More</button>
       </div>
     </div>
   </section>
 
-  <section class="tenx-section">
-    <div class="tenx-container">
-      <!-- Left text content -->
-      <div class="tenx-text">
-        <h1>10X Program</h1>
-        <h4>Inclusively Equipping Young Women in Advanced Digital Skills & Connecting Them to Dignified Work</span></h4>
-        <p>
-          Refactory Academy is empowering young women with relevant tech skills and life-changing opportunities,
-          equipping them to thrive in the digital economy as individuals and as business owners.
-        </p>
-        <!-- Small images row -->
-        <div class="tenx-small-images">
-          <img src="./images/Outbox.png" alt="Outbox">
-          <img src="./images/UNCDF.png" alt="UNCDF">
-          <img src="./images/Mastercard-Foundation.png" alt="Mastercard-Foundation">
-        </div>
-
-        <button class="btn-yellow">Learn More<i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-
-      <!-- Right image content -->
-      <div class="tenx-image">
-        <img src="./images/Women.jpg" alt="Women discussing">
-      </div>
-    </div>
-  </section>
-
+  <!-- footer section -->
   <footer class="site-footer">
     <div class="footer-container">
 
-      <!-- Column 1: Logo + paragraph + social icons -->
+      <!-- Column 1 -->
       <div class="footer-col">
         <div class="footer-logo">
-          <img src="./images/Refactory-Logo.png" alt="Refactory Logo" width="150">
+          <img width="500" height="114"
+            src="https://refactory.academy/wp-content/uploads/2025/07/Refactory-Logo-White.png"
+            class="attachment-full size-full wp-image-61" alt="Refactory White Logo"
+            srcset="https://refactory.academy/wp-content/uploads/2025/07/Refactory-Logo-White.png 500w, https://refactory.academy/wp-content/uploads/2025/07/Refactory-Logo-White-300x68.png 300w"
+            sizes="(max-width: 500px) 100vw, 500px">
         </div>
         <p>Refactory is a Tech skilling Academy. We are the industry’s blueprint for hiring software talent.</p>
         <div class="social-icons">
@@ -186,7 +165,7 @@
         </div>
       </div>
 
-      <!-- Column 2: Resources -->
+      <!-- Column 2-->
       <div class="footer-col">
         <h2>Resources</h2>
         <ul>
@@ -198,7 +177,7 @@
         </ul>
       </div>
 
-      <!-- Column 3: Get in Touch -->
+      <!-- Column 3-->
       <div class="footer-col">
         <h2>Get in Touch</h2>
         <div class="contact-item">
@@ -206,7 +185,7 @@
           <span>+256 (0) 393254046</span>
         </div>
         <div class="contact-item">
-          <i class="fas fa-phone"></i>
+          <i class="fa-brands fa-whatsapp"></i>
           <span>+256 (0) 759243109</span>
         </div>
         <div class="contact-item">
@@ -219,11 +198,11 @@
         </div>
       </div>
 
-      <!-- Column 4: Visit Us -->
+      <!-- Column 4-->
       <div class="footer-col">
         <h2>Visit Us</h2>
         <p>Refactory Academy, 2nd Floor, Clarke International University, Kawagga Close off Kalungi Road, Muyenga</p>
-        <h2>Location</h2>
+        <h3><a href="#">Location</a></h3>
       </div>
 
     </div>
@@ -234,8 +213,9 @@
   </footer>
 
 
-  <!-- Carousel JS -->
+
   <script>
+    // Carousel JS
     const slides = document.querySelectorAll('.slide');
     let current = 0;
 
@@ -246,6 +226,14 @@
     }
 
     setInterval(showNextSlide, 3000);
+
+    // Hamburger button(mobile/tablet screen)
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
   </script>
 </body>
 
